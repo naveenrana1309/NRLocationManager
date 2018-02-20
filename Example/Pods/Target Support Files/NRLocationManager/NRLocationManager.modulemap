@@ -1,0 +1,6 @@
+framework module NRLocationManager {
+  umbrella header "NRLocationManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

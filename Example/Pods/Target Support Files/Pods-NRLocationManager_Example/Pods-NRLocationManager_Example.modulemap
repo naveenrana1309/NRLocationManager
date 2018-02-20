@@ -1,0 +1,6 @@
+framework module Pods_NRLocationManager_Example {
+  umbrella header "Pods-NRLocationManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "NRLocationManager",
+  "version": "0.1.0",
+  "summary": "A short description of NRLocationManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/vikash-appster/NRLocationManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vikash-appster": "naveen@appster.in"
+  },
+  "source": {
+    "git": "https://github.com/vikash-appster/NRLocationManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NRLocationManager/Classes/**/*"
+}

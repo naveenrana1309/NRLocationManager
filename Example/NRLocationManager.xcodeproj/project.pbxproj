@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01ACB7EB203BDB9200E705A4 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ACB7EA203BDB9200E705A4 /* sample.png */; };
+		01ACB7ED203BDE1900E705A4 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 01ACB7EC203BDE1900E705A4 /* sample.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		00A9B4DB7AB26E56E4CA9E26 /* Pods-NRLocationManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRLocationManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NRLocationManager_Tests/Pods-NRLocationManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		01ACB7EA203BDB9200E705A4 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		01ACB7EC203BDE1900E705A4 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		0D937C752501727C0D56076E /* Pods-NRLocationManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NRLocationManager_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NRLocationManager_Tests/Pods-NRLocationManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		29367DAD6BDF79DE2403B294 /* Pods_NRLocationManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NRLocationManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F7F6E3B28D7CAA0064EF4B8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				01ACB7EA203BDB9200E705A4 /* sample.png */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for NRLocationManager";
@@ -149,6 +148,7 @@
 				B0E34360621B10FB1DE7B27F /* NRLocationManager.podspec */,
 				449DC75E2230D6659C02C3E4 /* README.md */,
 				2F7F6E3B28D7CAA0064EF4B8 /* LICENSE */,
+				01ACB7EC203BDE1900E705A4 /* sample.png */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				01ACB7EB203BDB9200E705A4 /* sample.png in Resources */,
+				01ACB7ED203BDE1900E705A4 /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

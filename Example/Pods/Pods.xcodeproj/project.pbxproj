@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019FCDF9203AD83800669C3E /* NRLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019FCDF8203AD83800669C3E /* NRLocationManager.swift */; };
+		01ACB7EF203BE60100E705A4 /* NRLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACB7EE203BE60100E705A4 /* NRLocationManager.swift */; };
 		23A5A09A05889172FC9786892C5B3DE9 /* NRLocationManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D15AFA1605D84A161F6DCEE6C9D073 /* NRLocationManager-dummy.m */; };
 		418138935EB28EB8DEE0B250FA4D9F80 /* Pods-NRLocationManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00E68788CA4193CB1335591987D34B /* Pods-NRLocationManager_Example-dummy.m */; };
 		4F558C95D9E4D359C33D87894158A7A9 /* Pods-NRLocationManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A766E528086891FB5505816AF5CB35 /* Pods-NRLocationManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		019FCDF8203AD83800669C3E /* NRLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRLocationManager.swift; sourceTree = "<group>"; };
+		01ACB7EE203BE60100E705A4 /* NRLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NRLocationManager.swift; path = NRLocationManager/Classes/NRLocationManager.swift; sourceTree = "<group>"; };
 		04D43E1B52B23F20EF0DAFC12662CE32 /* Pods-NRLocationManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NRLocationManager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		116F70B209CD421496977DDE9C1F09FC /* Pods-NRLocationManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NRLocationManager_Example.modulemap"; sourceTree = "<group>"; };
 		1D654948382DB7E5DA1356DD1ED64DB5 /* Pods-NRLocationManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NRLocationManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		806410E6D56B6760625F3BD790129CAB /* NRLocationManager */ = {
 			isa = PBXGroup;
 			children = (
-				019FCDF8203AD83800669C3E /* NRLocationManager.swift */,
+				01ACB7EE203BE60100E705A4 /* NRLocationManager.swift */,
 				06267C56A6B44D5BD733A5339DB48978 /* Support Files */,
 			);
 			name = NRLocationManager;
@@ -296,6 +296,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					780ED89B182022A46EA32E471572AD36 = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				019FCDF9203AD83800669C3E /* NRLocationManager.swift in Sources */,
+				01ACB7EF203BE60100E705A4 /* NRLocationManager.swift in Sources */,
 				23A5A09A05889172FC9786892C5B3DE9 /* NRLocationManager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 486E6C58E5D2FE5EFD1DDA7875A71A8D /* NRLocationManager.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -514,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 486E6C58E5D2FE5EFD1DDA7875A71A8D /* NRLocationManager.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

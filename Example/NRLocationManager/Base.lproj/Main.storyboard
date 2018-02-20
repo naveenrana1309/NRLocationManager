@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rWk-29-ZYT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,21 +10,71 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="IP8-nX-8qO">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NRLocationManager_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rWk-29-ZYT" customClass="ViewController" customModule="NRLocationManager_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="JbZ-QD-7bx"/>
+                        <viewControllerLayoutGuide type="bottom" id="rjO-Hv-kh9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="6bh-ff-gf5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="wJ3-Y6-pBM">
+                                <rect key="frame" x="0.0" y="70" width="375" height="497"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77M-EY-moX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                        <color key="backgroundColor" red="0.2521402412" green="0.27742007149999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="One Time Location"/>
+                                        <connections>
+                                            <action selector="oneTimeLocationButtonPressed" destination="rWk-29-ZYT" eventType="touchUpInside" id="cdR-NX-hmj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aR-Qq-LVE">
+                                        <rect key="frame" x="0.0" y="144.5" width="375" height="64"/>
+                                        <color key="backgroundColor" red="0.5093529913" green="0.81643295500000002" blue="0.38526062129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Continous Location"/>
+                                        <connections>
+                                            <action selector="continousLocationButtonPressedWithSender:" destination="rWk-29-ZYT" eventType="touchUpInside" id="CMW-fx-MeX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmr-Dc-j1h">
+                                        <rect key="frame" x="0.0" y="288.5" width="375" height="64.5"/>
+                                        <color key="backgroundColor" red="0.81643295500000002" green="0.36531445699999998" blue="0.76258673799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Significant Location"/>
+                                        <connections>
+                                            <action selector="significantLocationButtonPressedWithSender:" destination="rWk-29-ZYT" eventType="touchUpInside" id="xQy-DN-oOd"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-Gc-znZ">
+                                        <rect key="frame" x="0.0" y="433" width="375" height="64"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wJ3-Y6-pBM" firstAttribute="top" secondItem="JbZ-QD-7bx" secondAttribute="bottom" constant="50" id="94F-S3-CEf"/>
+                            <constraint firstItem="rjO-Hv-kh9" firstAttribute="top" secondItem="wJ3-Y6-pBM" secondAttribute="bottom" constant="100" id="KAl-bD-Hdh"/>
+                            <constraint firstItem="wJ3-Y6-pBM" firstAttribute="leading" secondItem="6bh-ff-gf5" secondAttribute="leading" id="egf-ef-QcP"/>
+                            <constraint firstAttribute="trailing" secondItem="wJ3-Y6-pBM" secondAttribute="trailing" id="wTT-Ob-pGf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="c1v-Gc-znZ" id="Ho3-PT-fZh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shd-6h-M8n" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-247" y="84"/>
         </scene>
     </scenes>
 </document>

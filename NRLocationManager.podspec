@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'NRLocationManager'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of NRLocationManager.'
+s.name             = 'NRLocationManager'
+s.version          = '1.0.0'
+s.summary          = 'This class is used to provide a location updates via completion handler.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,33 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+NRLocationManager: This class is used to provide a location updates via completion handler.Some of the main features this library provide are:
+* One time Location
+* Continous Location
+* Significant Location
+* Check System location is on/off.
 
-  s.homepage         = 'https://github.com/vikash-appster/NRLocationManager'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'vikash-appster' => 'naveen@appster.in' }
-  s.source           = { :git => 'https://github.com/vikash-appster/NRLocationManager.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+DESC
 
-  s.ios.deployment_target = '8.0'
+s.homepage         = 'https://github.com/naveenrana1309/NRLocationManager'
+s.screenshots     = 'https://cdn.rawgit.com/naveenrana1309/NRLocationManager/master/Example/sample.png'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'naveenrana1309' => 'naveenrana1309@gmail.com' }
+s.source           = { :git => 'https://github.com/naveenrana1309/NRLocationManager.git', :tag => s.version.to_s }
 
-  s.source_files = 'NRLocationManager/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'NRLocationManager' => ['NRLocationManager/Assets/*.png']
-  # }
+#s.social_media_url = 'https://www.facebook.com/naveen.rana.146'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.ios.deployment_target = '10.0'
+
+s.source_files = 'NRLocationManager/Classes/**/*'
+
+# s.resource_bundles = {
+#   'NRLocationManager' => ['NRLocationManager/Assets/*.png']
+# }
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+# s.frameworks = 'UIKit', 'MapKit'
+
 end
+

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  NRLocationManager
 //
-//  Created by vikash-appster on 02/19/2018.
-//  Copyright (c) 2018 vikash-appster. All rights reserved.
+//  Created by Naveen Rana on 02/19/2018.
+//  Copyright (c) 2018 Naveen Rana. All rights reserved.
 //
 
 import UIKit

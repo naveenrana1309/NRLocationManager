@@ -27,6 +27,8 @@ Xcode 9+ , Swift 4 , iOS 9 and above
 
 ## Plist Keys & Background Mode
 Please make sure you have the below keys in your plist file before using the location services.
+
+```
 <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 <string>Description</string>
 
@@ -38,6 +40,7 @@ Please make sure you have the below keys in your plist file before using the loc
 
 Also enable background mode for location :
 UIBackgroundModes -> Location updates
+```
 
 ## Installation
 

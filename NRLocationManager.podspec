@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'NRLocationManager'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = 'This class is used to provide a location updates via completion handler.'
 
 # This description is used to generate tags and improve search results.

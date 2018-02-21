@@ -12,10 +12,10 @@
 ## Introduction
 
 NRLocationManager: This class is used to provide a location updates via completion handler. Some of the main features of this library  are:
-* One time Location
-* Continous Location
-* Significant Location
-* Check System location is on/off.
+1) One time Location
+2) Continous Location
+3) Significant Location
+4) Check System location is on/off
 
 ## Example
 

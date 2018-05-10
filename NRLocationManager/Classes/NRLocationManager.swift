@@ -26,7 +26,7 @@ open class NRLocationManger: NSObject, CLLocationManagerDelegate {
     var beaconHandler: onRangingBeacon?
     var onRegionEnter: onRegionEvent?
     var onRegionExit: onRegionEvent?
-    typealias onRangingBeacon = ( (_ beacons: [CLBeacon]) -> Void)
+    public typealias onRangingBeacon = ( (_ beacons: [CLBeacon]) -> Void)
     public typealias onRegionEvent = ( (_ region: CLRegion?) -> Void)
 
     
@@ -195,7 +195,7 @@ open class NRLocationManger: NSObject, CLLocationManagerDelegate {
     
     //MARK: Beacons
     
-    func monitorBeaconsInRegion(region: CLBeaconRegion!, onRanging: onRangingBeacon? ) {
+   public func monitorBeaconsInRegion(region: CLBeaconRegion!, onRanging: onRangingBeacon? ) {
         if NRLocationManger.state == ServiceStatus.disabled {
             // Utils.showAlertWithMessage("This will allow the support team to find you more w=ork")
             print(LOCATION_ERROR_MESSAGE)
@@ -231,13 +231,13 @@ open class NRLocationManger: NSObject, CLLocationManagerDelegate {
     
     //MARK: Region Monitoring
     
-    func removeAllMonitoredRegions() {
+    public func removeAllMonitoredRegions() {
         for region in manager.monitoredRegions {
             manager.stopMonitoring(for: region)
         }
     }
     
-    func monitorRegion(region: CLRegion!, onEnter: onRegionEvent?, onExit: onRegionEvent?){
+    public func monitorRegion(region: CLRegion!, onEnter: onRegionEvent?, onExit: onRegionEvent?){
         // if beacons region monitoring is not available on this device we can't satisfy the request
         let isAvailable = CLLocationManager.isMonitoringAvailable(for: CLRegion.self)
         if isAvailable {

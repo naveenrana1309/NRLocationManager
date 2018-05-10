@@ -8,8 +8,10 @@
 
 Pod::Spec.new do |s|
 s.name             = 'NRLocationManager'
-s.version          = '1.0.2'
+s.version          = '1.1.0'
 s.summary          = 'This class is used to provide a location updates via completion handler.'
+s.swift_version    = '4.0'
+
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -32,11 +34,14 @@ s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'naveenrana1309' => 'naveenrana1309@gmail.com' }
 s.source           = { :git => 'https://github.com/naveenrana1309/NRLocationManager.git', :tag => s.version.to_s }
 
-#s.social_media_url = 'https://www.facebook.com/naveen.rana.146'
+#s.social_media_url = 'https://www.facebook.com/iOSByHeart/'
 
 s.ios.deployment_target = '10.0'
 
 s.source_files = 'NRLocationManager/Classes/**/*'
+
+
+
 
 # s.resource_bundles = {
 #   'NRLocationManager' => ['NRLocationManager/Assets/*.png']

@@ -14,7 +14,7 @@ import CoreLocation
 open class NRLocationManger: NSObject, CLLocationManagerDelegate {
     
     let LOCATION_ERROR_MESSAGE = "Please check your location settings. Settings->Privacy->Location Services"
-    var manager: CLLocationManager
+    open var manager: CLLocationManager
     open static let shared = NRLocationManger()
     public var currentLocation: CLLocation?
     var type: LocationType = .onetime
